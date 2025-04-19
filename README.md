@@ -13,7 +13,7 @@ $ docker build -t gym-web:latest .
 $ docker images 
 
 # run images in container 
-$ docker run -d -p 80:80 
+$ docker run -d -p 80:80 <yourimage>
 
 # now your application running in container 
 $ http://localhost:80
