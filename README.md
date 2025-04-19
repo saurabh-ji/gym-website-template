@@ -1,4 +1,4 @@
-# clone the repository 
+ clone the repository 
 $ git clone https://github.com/saurabh-ji/gym-website-template.git
 
 # update the terminal 
