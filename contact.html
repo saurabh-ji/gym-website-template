@@ -46,32 +46,35 @@
     }
 
     .contact-container h2 {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       color: #232f3e;
     }
 
-    .contact-item {
-      margin: 20px 0;
-      font-size: 18px;
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
     }
 
-    .contact-item a {
-      color: #0073e6;
+    .contact-icons a {
       text-decoration: none;
-      font-weight: bold;
-    }
-
-    .contact-item i {
-      margin-right: 10px;
       color: #232f3e;
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s ease;
     }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      background-color: #f0f0f0;
-      color: #555;
+    .contact-icons a:hover {
+      transform: scale(1.1);
+      color: #0073e6;
+    }
+
+    .contact-icons i {
+      font-size: 40px;
+      margin-bottom: 10px;
     }
   </style>
 </head>
@@ -91,46 +94,20 @@
   <div class="contact-container">
     <h2>Let’s connect and collaborate!</h2>
 
-    <div class="contact-item">
-      <i class="fas fa-envelope"></i>
-      <a href="mailto:saurabhcse70@gmail.com">saurabhcse70@gmail.com</a>
+    <div class="contact-icons">
+      <a href="mailto:saurabhcse70@gmail.com">
+        <i class="fas fa-envelope"></i>
+        Email
+      </a>
+      <a href="https://github.com/saurabh-ji" target="_blank">
+        <i class="fab fa-github"></i>
+        GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/saurabh-yadav-217a59291/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+        LinkedIn
+      </a>
     </div>
-
-    <div class="contact-item">
-      <i class="fab fa-github"></i>
-      <a href="https://github.com/saurabh-ji" target="_blank">github.com/saurabh-ji</a>
-    </div>
-
-    <div class="contact-item">
-      <i class="fab fa-linkedin"></i>
-      <a href="https://www.linkedin.com/in/saurabh-yadav-217a59291/" target="_blank">linkedin.com/in/saurabh-yadav</a>
-    </div>
-  </div>
-
-  <footer>
-    © 2025 Saurabh Yadav. All rights reserved.
-  </footer>
-
-</body>
-</html>
-
-
-  <header>
-    <h1>Contact Me</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <div class="contact-container">
-    <h2>Let’s connect!</h2>
-    <p>Email: <a href="mailto:saurabhcse70@gmail.com">saurabhcse70@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/saurabh-ji" target="_blank">https://github.com/saurabh-ji</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/saurabh-yadav-217a59291/" target="_blank">https://www.linkedin.com/in/saurabh-yadav-217a59291/</a></p>
   </div>
 
 </body>
