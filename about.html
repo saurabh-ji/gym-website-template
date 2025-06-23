@@ -30,7 +30,6 @@
       line-height: 1.6;
     }
     
-    /* Header Styles (Consistent with Homepage) */
     header {
       background-color: white;
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
@@ -69,26 +68,10 @@
       text-decoration: none;
       font-weight: 500;
       transition: all 0.3s ease;
-      position: relative;
     }
     
     .nav-links a:hover {
       color: var(--primary);
-    }
-    
-    .nav-links a::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2px;
-      background: var(--primary);
-      bottom: -4px;
-      left: 0;
-      transition: width 0.3s ease;
-    }
-    
-    .nav-links a:hover::after {
-      width: 100%;
     }
     
     .mobile-menu-btn {
@@ -100,7 +83,6 @@
       cursor: pointer;
     }
     
-    /* About Page Specific Styles */
     .about-hero {
       padding: 10rem 2rem 4rem;
       background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
@@ -166,26 +148,12 @@
     .social-links a:hover {
       background: var(--primary);
       color: white;
-      transform: translateY(-3px);
     }
     
     .details-section h2 {
       font-size: 2rem;
       margin-bottom: 1.5rem;
       color: var(--primary);
-      position: relative;
-      display: inline-block;
-    }
-    
-    .details-section h2::after {
-      content: '';
-      position: absolute;
-      width: 50%;
-      height: 4px;
-      background: var(--accent);
-      bottom: -8px;
-      left: 0;
-      border-radius: 2px;
     }
     
     .info-card {
@@ -210,68 +178,45 @@
       border-radius: 2rem;
       font-size: 0.9rem;
       font-weight: 500;
-      display: flex;
+    }
+    
+    .certificate-link {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-flex;
       align-items: center;
       gap: 0.5rem;
+      margin-top: 0.5rem;
     }
     
-    .skill-tag i {
-      color: var(--primary);
+    .certificate-link:hover {
+      text-decoration: underline;
     }
     
-    .certification-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 1rem;
-      margin-bottom: 1rem;
-    }
-    
-    .certification-icon {
-      color: var(--accent);
-      font-size: 1.2rem;
-      margin-top: 0.2rem;
-    }
-    
-    .certification-details h4 {
-      margin-bottom: 0.3rem;
-    }
-    
-    .certification-details p {
-      color: var(--gray);
-      font-size: 0.9rem;
-    }
-    
-    /* Responsive Design */
     @media (max-width: 768px) {
       .about-content {
         grid-template-columns: 1fr;
-        gap: 2rem;
-      }
-      
-      .profile-section {
-        order: -1;
-      }
-      
-      .nav-links {
-        display: none;
       }
       
       .mobile-menu-btn {
         display: block;
       }
+      
+      .nav-links {
+        display: none;
+      }
     }
   </style>
 </head>
 <body>
-  <!-- Header/Navigation -->
   <header>
     <div class="navbar">
       <a href="index.html" class="logo">Saurabh<span>Yadav</span></a>
       <nav class="nav-links">
         <a href="index.html">Home</a>
-        <a href="about.html" class="active">About</a>
+        <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
-        <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
       </nav>
       <button class="mobile-menu-btn">
@@ -280,29 +225,33 @@
     </div>
   </header>
 
-  <!-- About Hero Section -->
   <section class="about-hero">
     <h1>About Me</h1>
     <p>DevOps Engineer | Cloud Architect | Automation Specialist</p>
   </section>
 
-  <!-- Main About Content -->
   <main class="about-content">
-    <!-- Profile Section -->
     <div class="profile-section">
-      <img src="assets/images/profile.jpg" alt="Saurabh Yadav" class="profile-image" />
+      <a href="https://www.linkedin.com/in/saurabh-yadav-217a59291/" target="_blank" rel="noopener noreferrer">
+        <img src="https://media.licdn.com/dms/image/D5603AQF0iQ0A9hQlVQ/profile-displayphoto-shrink_400_400/0/1704454297693?e=1721865600&v=beta&t=2v2Q6X6Q6Q6Q6Q6Q6Q6Q6Q6Q6Q6Q6Q6Q6Q6Q6Q6Q6Q6" 
+             alt="Saurabh Yadav" 
+             class="profile-image">
+      </a>
       <h2>Saurabh Yadav</h2>
       <p>DevOps & Cloud Engineer</p>
-      
       <div class="social-links">
-        <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/saurabh-yadav-217a59291/" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/saurabh-ji" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:saurabhcse70@gmail.com">
+          <i class="fas fa-envelope"></i>
+        </a>
       </div>
     </div>
 
-    <!-- Details Section -->
     <div class="details-section">
       <div class="info-card">
         <h2>My Journey</h2>
@@ -312,61 +261,40 @@
 
       <div class="info-card">
         <h2>Education</h2>
-        <div class="certification-item">
-          <i class="fas fa-graduation-cap certification-icon"></i>
-          <div class="certification-details">
-            <h4>B.Tech in Computer Science</h4>
-            <p>Dr. APJ Abdul Kalam Technical University | 2023 | 7.0 CGPA</p>
-          </div>
-        </div>
+        <p><strong>B.Tech in Computer Science</strong></p>
+        <p>Dr. APJ Abdul Kalam Technical University | 2023 | 7.0 CGPA</p>
       </div>
 
       <div class="info-card">
         <h2>Skills</h2>
         <div class="skills-container">
-          <span class="skill-tag"><i class="fab fa-aws"></i> AWS</span>
-          <span class="skill-tag"><i class="fab fa-docker"></i> Docker</span>
-          <span class="skill-tag"><i class="fas fa-dharmachakra"></i> Kubernetes</span>
-          <span class="skill-tag"><i class="fas fa-code"></i> Terraform</span>
-          <span class="skill-tag"><i class="fab fa-jenkins"></i> Jenkins</span>
-          <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
-          <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
-          <span class="skill-tag"><i class="fas fa-terminal"></i> Bash</span>
-          <span class="skill-tag"><i class="fas fa-chart-line"></i> Prometheus</span>
-          <span class="skill-tag"><i class="fas fa-chart-bar"></i> Grafana</span>
-          <span class="skill-tag"><i class="fas fa-network-wired"></i> CI/CD</span>
+          <span class="skill-tag">AWS</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Kubernetes</span>
+          <span class="skill-tag">Terraform</span>
+          <span class="skill-tag">Jenkins</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Bash</span>
+          <span class="skill-tag">CI/CD</span>
         </div>
       </div>
 
       <div class="info-card">
         <h2>Certifications</h2>
-        <div class="certification-item">
-          <i class="fas fa-certificate certification-icon" style="color: #FF9900;"></i>
-          <div class="certification-details">
-            <h4>AWS Certified Solutions Architect – Associate</h4>
-            <p>Amazon Web Services | 2023</p>
-          </div>
-        </div>
-        <div class="certification-item">
-          <i class="fas fa-certificate certification-icon" style="color: #2496ED;"></i>
-          <div class="certification-details">
-            <h4>Docker Certified Associate</h4>
-            <p>Docker Inc. | 2023</p>
-          </div>
-        </div>
-        <div class="certification-item">
-          <i class="fas fa-certificate certification-icon" style="color: #326CE5;"></i>
-          <div class="certification-details">
-            <h4>Certified Kubernetes Administrator (CKA)</h4>
-            <p>Cloud Native Computing Foundation | 2023</p>
-          </div>
-        </div>
+        <p><strong>AWS Certified Solutions Architect – Associate</strong></p>
+        <p>Amazon Web Services | 2023</p>
+        <a href="file:///D:/SAURABH%20RESUME/Saurabh%20AWS%20Certified%20Solutions%20Architect%20-%20Associate%20certificate%20(1).pdf" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="certificate-link">
+          <i class="fas fa-file-pdf"></i> View Certificate
+        </a>
       </div>
     </div>
   </main>
 
   <script>
-    // Mobile menu toggle
     document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
       document.querySelector('.nav-links').classList.toggle('active');
     });
