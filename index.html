@@ -4,41 +4,88 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DevOps & Cloud Engineer Portfolio and linux</title>
+  <title>Saurabh Yadav | DevOps & Cloud Engineer Portfolio</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       background-color: #f4f4f4;
       margin: 0;
       padding: 0;
+      color: #333;
     }
+
     header {
       background-color: #232f3e;
       color: white;
-      padding: 20px;
+      padding: 30px 20px;
       text-align: center;
     }
+
+    nav {
+      margin-top: 10px;
+    }
+
     nav a {
       color: white;
       margin: 0 15px;
       text-decoration: none;
+      font-weight: 500;
     }
-    section {
-      padding: 50px;
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      padding: 60px 20px;
+      background: linear-gradient(to right, #0073e6, #00c6ff);
+      color: white;
       text-align: center;
     }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto 25px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 24px;
+      background-color: white;
+      color: #0073e6;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #f0f0f0;
+      color: #005bb5;
+    }
+
     .tagline {
-      font-size: 1.5em;
+      font-size: 1.2em;
       margin-top: 10px;
-      color: #333;
+      font-weight: 400;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Saurabh Yadav.</h1>
+    <h1>Saurabh Yadav</h1>
     <p class="tagline">DevOps | AWS Cloud | Kubernetes | CI/CD Enthusiast</p>
     <nav>
       <a href="index.html">Home</a>
@@ -49,11 +96,12 @@
     </nav>
   </header>
 
-  <section>
-    <h2>no Welcome to My Portfolio</h2>
-    <p>I design scalable cloud infrastructure and implement efficient DevOps pipelines.</p>
-    <p>Explore my projects, experience, and certifications.</p>
+  <section class="hero">
+    <h2>Welcome to My Portfolio</h2>
+    <p>I specialize in building scalable cloud architectures and automating DevOps workflows with AWS, Docker, Kubernetes, and CI/CD tools.</p>
+    <a href="projects.html" class="cta-button">View My Projects</a>
   </section>
 
 </body>
 </html>
+
