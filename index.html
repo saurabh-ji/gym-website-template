@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saurabh Yadav | DevOps & Cloud Engineer</title>
+  <title>About | Saurabh Yadav - DevOps & Cloud Engineer</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <style>
@@ -14,6 +14,7 @@
       --light: #f8fafc;
       --accent: #10b981;
       --gray: #64748b;
+      --light-gray: #e2e8f0;
     }
     
     * {
@@ -29,7 +30,6 @@
       line-height: 1.6;
     }
     
-    /* Header Styles */
     header {
       background-color: white;
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
@@ -68,26 +68,10 @@
       text-decoration: none;
       font-weight: 500;
       transition: all 0.3s ease;
-      position: relative;
     }
     
     .nav-links a:hover {
       color: var(--primary);
-    }
-    
-    .nav-links a::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2px;
-      background: var(--primary);
-      bottom: -4px;
-      left: 0;
-      transition: width 0.3s ease;
-    }
-    
-    .nav-links a:hover::after {
-      width: 100%;
     }
     
     .mobile-menu-btn {
@@ -99,192 +83,133 @@
       cursor: pointer;
     }
     
-    /* Hero Section */
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      padding: 8rem 2rem 4rem;
+    .about-hero {
+      padding: 10rem 2rem 4rem;
       background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-      position: relative;
-      overflow: hidden;
+      text-align: center;
     }
     
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      right: -50%;
-      width: 100%;
-      height: 200%;
-      background: url('assets/images/cloud-pattern.png') repeat;
-      opacity: 0.05;
-      z-index: 0;
-    }
-    
-    .hero-content {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      gap: 4rem;
-      position: relative;
-      z-index: 1;
-    }
-    
-    .hero-text {
-      flex: 1;
-    }
-    
-    .hero-image {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-    }
-    
-    .hero-image img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 1rem;
-      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-    }
-    
-    .tagline {
-      color: var(--primary);
-      font-weight: 500;
+    .about-hero h1 {
+      font-size: 3rem;
       margin-bottom: 1rem;
-      display: inline-block;
-      background: rgba(37, 99, 235, 0.1);
-      padding: 0.5rem 1rem;
-      border-radius: 2rem;
-      font-size: 0.9rem;
-    }
-    
-    h1 {
-      font-size: 3.5rem;
-      font-weight: 700;
-      line-height: 1.2;
-      margin-bottom: 1.5rem;
       color: var(--dark);
     }
     
-    .hero p {
-      font-size: 1.1rem;
+    .about-hero p {
+      font-size: 1.2rem;
       color: var(--gray);
-      margin-bottom: 2rem;
-      max-width: 600px;
+      max-width: 700px;
+      margin: 0 auto;
     }
     
-    .cta-buttons {
+    .about-content {
+      max-width: 1000px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+    
+    .profile-section {
       display: flex;
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-    
-    .btn {
-      display: inline-block;
-      padding: 0.8rem 1.8rem;
-      border-radius: 0.5rem;
-      font-weight: 500;
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
-    
-    .btn-primary {
-      background-color: var(--primary);
-      color: white;
-    }
-    
-    .btn-primary:hover {
-      background-color: var(--primary-dark);
-      transform: translateY(-2px);
-      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    }
-    
-    .btn-secondary {
-      background-color: white;
-      color: var(--primary);
-      border: 1px solid var(--primary);
-    }
-    
-    .btn-secondary:hover {
-      background-color: rgba(37, 99, 235, 0.05);
-      transform: translateY(-2px);
-    }
-    
-    .tech-stack {
-      display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 1rem;
-      margin-top: 2rem;
     }
     
-    .tech-stack p {
-      margin: 0;
-      color: var(--gray);
-      font-size: 0.9rem;
+    .profile-image {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
     }
     
-    .tech-icons {
+    .social-links {
       display: flex;
-      gap: 0.5rem;
+      gap: 1rem;
+      margin-top: 1rem;
     }
     
-    .tech-icon {
-      width: 30px;
-      height: 30px;
+    .social-links a {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--light-gray);
       display: flex;
       align-items: center;
       justify-content: center;
+      color: var(--primary);
+      transition: all 0.3s ease;
+    }
+    
+    .social-links a:hover {
+      background: var(--primary);
+      color: white;
+    }
+    
+    .details-section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: var(--primary);
+    }
+    
+    .info-card {
       background: white;
-      border-radius: 50%;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     }
     
-    .tech-icon i {
-      color: var(--primary);
-      font-size: 1rem;
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 1rem;
     }
     
-    /* Responsive Design */
-    @media (max-width: 992px) {
-      .hero-content {
-        flex-direction: column;
-        text-align: center;
-      }
-      
-      .hero-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      
-      .hero p {
-        max-width: 100%;
-      }
-      
-      .cta-buttons {
-        justify-content: center;
-      }
+    .skill-tag {
+      background: var(--light-gray);
+      color: var(--dark);
+      padding: 0.5rem 1rem;
+      border-radius: 2rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    
+    .certificate-link {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+    
+    .certificate-link:hover {
+      text-decoration: underline;
     }
     
     @media (max-width: 768px) {
-      .nav-links {
-        display: none;
+      .about-content {
+        grid-template-columns: 1fr;
       }
       
       .mobile-menu-btn {
         display: block;
       }
       
-      h1 {
-        font-size: 2.5rem;
+      .nav-links {
+        display: none;
       }
     }
   </style>
 </head>
 <body>
-  <!-- Header/Navigation -->
   <header>
     <div class="navbar">
       <a href="index.html" class="logo">Saurabh<span>Yadav</span></a>
@@ -292,7 +217,6 @@
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
-        <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
       </nav>
       <button class="mobile-menu-btn">
@@ -301,65 +225,78 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <div class="hero-text">
-        <span class="tagline">DevOps & Cloud Engineer</span>
-        <h1>Building Scalable Cloud Infrastructure with Precision</h1>
-        <p>I architect and automate cloud-native solutions using AWS, Kubernetes, and CI/CD pipelines to help businesses achieve reliability at scale.</p>
-        
-        <div class="cta-buttons">
-          <a href="projects.html" class="btn btn-primary">
-            <i class="fas fa-code-branch"></i> View Projects
-          </a>
-          <a href="contact.html" class="btn btn-secondary">
-            <i class="fas fa-paper-plane"></i> Contact Me
-          </a>
-        </div>
-        
-        <div class="tech-stack">
-          <p>Tech Stack:</p>
-          <div class="tech-icons">
-            <div class="tech-icon" title="AWS">
-              <i class="fab fa-aws"></i>
-            </div>
-            <div class="tech-icon" title="Docker">
-              <i class="fab fa-docker"></i>
-            </div>
-            <div class="tech-icon" title="Kubernetes">
-              <i class="fas fa-dharmachakra"></i>
-            </div>
-            <div class="tech-icon" title="Terraform">
-              <i class="fas fa-code"></i>
-            </div>
-            <div class="tech-icon" title="CI/CD">
-              <i class="fas fa-sync-alt"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="hero-image">
-        <img src="assets/images/hero-illustration.svg" alt="Cloud Infrastructure Illustration" />
-      </div>
-    </div>
+  <section class="about-hero">
+    <h1>About Me</h1>
+    <p>DevOps Engineer | Cloud Architect | Automation Specialist</p>
   </section>
 
+  <main class="about-content">
+    <div class="profile-section">
+      <a href="https://www.linkedin.com/in/saurabh-yadav-217a59291/" target="_blank" rel="noopener noreferrer">
+        <img src="https://media.licdn.com/dms/image/D5603AQF0iQ0A9hQlVQ/profile-displayphoto-shrink_400_400/0/1704454297693?e=1721865600&v=beta&t=2v2Q6X6Q6Q6Q6Q6Q6Q6Q6Q6Q6Q6Q6Q6Q6Q6Q6Q6Q6Q6" 
+             alt="Saurabh Yadav" 
+             class="profile-image">
+      </a>
+      <h2>Saurabh Yadav</h2>
+      <p>DevOps & Cloud Engineer</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/saurabh-yadav-217a59291/" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/saurabh-ji" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:saurabhcse70@gmail.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="details-section">
+      <div class="info-card">
+        <h2>My Journey</h2>
+        <p>I'm a passionate DevOps and Cloud Engineer with expertise in designing, implementing, and maintaining scalable cloud infrastructure. My journey in technology began with a fascination for automation and has evolved into a career focused on building reliable, efficient systems.</p>
+        <p>I specialize in bridging the gap between development and operations, implementing CI/CD pipelines, and optimizing cloud resources for performance and cost.</p>
+      </div>
+
+      <div class="info-card">
+        <h2>Education</h2>
+        <p><strong>B.Tech in Computer Science</strong></p>
+        <p>Dr. APJ Abdul Kalam Technical University | 2023 | 7.0 CGPA</p>
+      </div>
+
+      <div class="info-card">
+        <h2>Skills</h2>
+        <div class="skills-container">
+          <span class="skill-tag">AWS</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Kubernetes</span>
+          <span class="skill-tag">Terraform</span>
+          <span class="skill-tag">Jenkins</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Bash</span>
+          <span class="skill-tag">CI/CD</span>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <h2>Certifications</h2>
+        <p><strong>AWS Certified Solutions Architect – Associate</strong></p>
+        <p>Amazon Web Services | 2023</p>
+        <a href="file:///D:/SAURABH%20RESUME/Saurabh%20AWS%20Certified%20Solutions%20Architect%20-%20Associate%20certificate%20(1).pdf" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="certificate-link">
+          <i class="fas fa-file-pdf"></i> View Certificate
+        </a>
+      </div>
+    </div>
+  </main>
+
   <script>
-    // Mobile menu toggle
     document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
       document.querySelector('.nav-links').classList.toggle('active');
-    });
-    
-    // Smooth scrolling. for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
     });
   </script>
 </body>
